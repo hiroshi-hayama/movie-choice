@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
 
-    <body class='background_welcome'>
+    <body class='background_register'>
 
         {{-- ナビゲーションバー --}}
         @include('commons.navbar')

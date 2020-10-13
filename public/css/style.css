@@ -1,11 +1,29 @@
 @charset "utf-8";
 
-.back-ground{ 
+.background_welcome{ 
     background-image: url("/images/the_avengers-wallpaper-1024x768.jpg"); 
     background-size: cover;
 } 
 
-.back-ground::before{
+.background_welcome::before{
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0,0,0,0.4);
+  /* 自由に位置指定 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: ' ';
+}
+
+.background_register{ 
+    background-image: url("/images/no_time_to_die_movie_2020-wallpaper-1152x720.jpg"); 
+    background-size: cover;
+} 
+
+.background_register::before{
   /* 透過した黒を上から重ねるイメージ */
   background-color: rgba(0,0,0,0.4);
   /* 自由に位置指定 */
@@ -22,6 +40,11 @@
    color: white;
    text-shadow:0 0 10px #FF0;
    margin-top: 160px;
+}
+
+#text_register{
+   color: white;
+   text-shadow:0 0 10px #FF0;
 }
 
 .welcome{
