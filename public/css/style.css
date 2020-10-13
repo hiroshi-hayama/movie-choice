@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.back-ground{ 
+    background-image: url("/images/the_avengers-wallpaper-1024x768.jpg"); 
+    background-size: cover;
+} 
+
+.back-ground::before{
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0,0,0,0.4);
+  /* 自由に位置指定 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: ' ';
+}
+
+#text{
+   color: white;
+   text-shadow:0 0 10px #FF0;
+   margin-top: 160px;
+}
+
+.welcome{
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+#navbar{
+    color:red;
+    font-family:cursive;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+  
+}
