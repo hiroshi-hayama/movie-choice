@@ -1,0 +1,21 @@
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(1,"スター・ウォーズ エピソード４／新たなる希望",11,1,1,1);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(2,"スター・ウォーズ エピソード５／帝国の逆襲",1891,1,1,1);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(3,"スター・ウォーズ エピソード６／ジェダイの帰還",1892,1,1,1);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(4,"インセプション",27205,1,1,1);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(5,"バタフライ・エフェクト",1954,1,1,1);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(6,"パプリカ",4977,2,2,1);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(7,"オール・ユー・ニード・イズ・キル",137113,1,1,1);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(8,"ゼロ・グラビティ",49047,1,1,1);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(9,"バック・トゥ・ザ・フューチャー",105,1,1,1);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(10,"ペンギン・ハイウェイ",508422,2,2,1);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(11,"ジョーカー",475557,1,1,2);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(12,"メメント",77,1,1,2);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(13,"羊たちの沈黙",274,1,1,2);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(14,"告白",54186,2,1,2);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(15,"プレステージ",1124,1,1,2);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(16,"ユージュアル・サスペクツ",629,1,1,2);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(17,"セブン",807,1,1,2);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(18,"グランド・イリュージョン",75656,1,1,2);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(19,"デス・プルーフ in グラインドハウス",1991,1,1,2);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(20,"コンスタンティン",561,1,1,2);

@@ -34,6 +34,25 @@
   left: 0;
   z-index: -1;
   content: ' ';
+  background-size: cover;
+}
+
+.background_choice{ 
+    background-image: url("/images/man_of_steel_2013-wallpaper-1152x720.jpg"); 
+    background-size: cover;
+} 
+
+.background_choice::before{
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0,0,0,0.4);
+  /* 自由に位置指定 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: ' ';
 }
 
 #text{
@@ -42,12 +61,43 @@
    margin-top: 160px;
 }
 
+#text_result{
+   color: white;
+   margin-top: 60px;
+   margin-bottom: 60px;
+}
+
+.result_title{
+    color: white;
+    font-weight: bold; 
+    margin-left: 400px;
+}
+.text_con{
+   color: white;
+   margin-top: 60px;
+   margin-left: 400px;
+}
+.side{
+   float: left;
+}
+
+.text_none{
+    margin-top: 200px;
+}
+
+.result_button{
+      margin-top: 100px;
+   margin-left: 400px;
+}
+
+
+
 #text_register{
    color: white;
    text-shadow:0 0 10px #FF0;
 }
 
-.welcome{
+.welcometext{
    margin-top: 100px;
    margin-bottom: 100px;
 }
@@ -58,7 +108,10 @@
 }
 
 .buttons{
-    display: flex;
-    flex-direction: column;
-  
+   display: inline-block
 }
+
+.buttons_choice{
+   margin-top: 100px;
+}
+
