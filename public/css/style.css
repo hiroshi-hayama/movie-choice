@@ -115,3 +115,20 @@
    margin-top: 100px;
 }
 
+.scroll{
+    overflow:auto;
+		width:730px; height:700px;
+		padding:5px;
+		border:2px dotted #ffffff;
+		color:black;
+		background-color:white;
+		line-height:1.5em;
+		font-weight: bold; 
+		font-size:200%;
+}
+
+.delete{
+   margin-left: 50px;
+   margin-top: 50px;
+}
+

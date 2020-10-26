@@ -45,4 +45,16 @@ Route::get('choice', 'ChoiceController@index')->name('choice.get');
 Route::get('choice2/{ew_id}', 'ChoiceController@show')->name('choice.show');
 Route::get('choice3/{ew_id}/{la_id}', 'ChoiceController@show_genre')->name('choice.show_genre');
 Route::get('choice_result/{ew_id}/{la_id}/{genre_id}', 'ChoiceController@show_result')->name('choice.show_result');
-Route::get('top', 'ChoiceController@to_top')->name('choice.to_top');
+Route::get('/', 'ChoiceController@to_top')->name('choice.to_top');
+
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::group(['prefix' => 'users/{id}'], function () {
+        Route::get('users_page', 'UsersController@users_index')->name('users.index');
+        Route::delete('users_page', 'UsersController@destroy_history')->name('users.detach_history');
+        Route::get('favorites', 'UsersController@users_favorite')->name('users.favorites');  
+        Route::delete('unfavorites', 'UsersController@destroy_favorite')->name('users.detach_favorite');
+    });
+    Route::resource('users.index', 'UsersController', ['only' => ['users.index']]);
+
+});

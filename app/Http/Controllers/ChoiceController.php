@@ -32,7 +32,7 @@ class ChoiceController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
         //
     }
@@ -65,6 +65,15 @@ class ChoiceController extends Controller
         return view('choice.choice3' , ['ew' => $ew ,'la' => $la]);
     }
     
+        public function store_history($object_movie)
+    {
+        $user = \Auth::user();
+        $movie_id = $object_movie->id;
+        $exist = $user->storing_history($movie_id);
+        if(!$exist){
+        $user->history()->attach($movie_id);
+        }
+    }
     
         public function show_result($ew_id , $la_id , $genre_id)
     {
@@ -72,28 +81,31 @@ class ChoiceController extends Controller
         $la = $la_id;
         $genre = $genre_id;
         
-        $tmdb = \DB::table('movies')->select('tmdb_id')->where('west_east', $ew)->where('live_animated',$la)->where('genre',$genre)->inRandomOrder()->first();
-        if($tmdb === null){
+        $movie = \DB::table('movies')->select()->where('west_east', $ew)->where('live_animated',$la)->where('genre',$genre)->inRandomOrder()->first();
+        if($movie === null){
+            
             return view('choice.choice_none');
             
         }else{
-        $tmdb_id = $tmdb->tmdb_id;
-
-        $client = new \GuzzleHttp\Client();
-
-        $url = "https://api.themoviedb.org/3/movie/";
-        $body = 'api_key=8aefb5e2de7dfff09a9892700b493da5&language=ja';
-        $search_url = $url . $tmdb_id . '?' . $body;
-
-        $request = $client->get($search_url);
-
-        $response_json = $request->getBody()->getContents();
-        
-        $response = json_decode($response_json);
-
-        //dd($response);
-        
-        return view('choice.choice_result' , ['responce' => $response,'ew' => $ew ,'la' => $la,'genre' => $genre]);
+            
+            if (\Auth::check()) {
+                $this-> store_history($movie);  
+            }
+            $tmdb_id = $movie->tmdb_id;
+    
+            $client = new \GuzzleHttp\Client();
+    
+            $url = "https://api.themoviedb.org/3/movie/";
+            $body = 'api_key=8aefb5e2de7dfff09a9892700b493da5&language=ja';
+            $search_url = $url . $tmdb_id . '?' . $body;
+    
+            $request = $client->get($search_url);
+    
+            $response_json = $request->getBody()->getContents();
+            
+            $response = json_decode($response_json);
+            
+            return view('choice.choice_result' , ['responce' => $response,'ew' => $ew ,'la' => $la,'genre' => $genre]);
         }
     }
     

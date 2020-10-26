@@ -11,10 +11,10 @@
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
                 @if (Auth::check())
-                        {{-- ユーザ詳細ページへのリンク --}}
-                        <li class="nav-item"><a href="#"></a></li>
-                        {{-- ログアウトへのリンク --}}
-                        <li class="nav-item">{!! link_to_route('logout.get', 'Logout') !!}</li>
+                    {{-- ユーザ詳細ページへのリンク --}}
+                    <li class="nav-item">{!! link_to_route('users.index', 'ユーザーページ',['id' => Auth::id()], ['class' => 'nav-link']) !!}</li>
+                    {{-- ログアウトへのリンク --}}
+                    <li class="nav-item">{!! link_to_route('logout.get', 'ログアウト',[], ['class' => 'nav-link']) !!}</li>
                 @else
                     {{-- ユーザ登録ページへのリンク --}}
                     <li class="nav-item">{!! link_to_route('signup.get', '新規登録', [], ['class' => 'nav-link']) !!}</li>
