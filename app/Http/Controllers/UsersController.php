@@ -102,5 +102,13 @@ class UsersController extends Controller
         return back();
     }
 
+    public function store_favorite($movie_id)
+    {
+        // 認証済みユーザ（閲覧者）が、 idのユーザをアンフォローする
+        \Auth::user()->favorite($movie_id);
+        // 前のURLへリダイレクトさせる
+        return back();
+    }
+    
 
 }

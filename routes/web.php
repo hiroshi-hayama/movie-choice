@@ -53,6 +53,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('users_page', 'UsersController@users_index')->name('users.index');
         Route::delete('users_page', 'UsersController@destroy_history')->name('users.detach_history');
         Route::get('favorites', 'UsersController@users_favorite')->name('users.favorites');  
+        Route::post('favorite', 'UsersController@store_favorite')->name('users.store_favorite');
         Route::delete('unfavorites', 'UsersController@destroy_favorite')->name('users.detach_favorite');
     });
     Route::resource('users.index', 'UsersController', ['only' => ['users.index']]);

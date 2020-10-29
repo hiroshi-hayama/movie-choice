@@ -8,9 +8,9 @@
         <div class="col-sm-8">
             <ul class="nav nav-tabs nav-justified mb-3">
                 {{-- 履歴タブ --}}
-                <li class="nav-item"><a href="#" class="nav-link">履歴</a></li>
+                <li class="nav-item">{!! link_to_route('users.index', '履歴',['id' => Auth::id()], ['class' => 'nav-link']) !!}</li>
                 {{-- お気に入り一覧タブ --}}
-                <li class="nav-item"><a href="#" class="nav-link">お気に入り</a></li>
+                <li class="nav-item">{!! link_to_route('users.favorites', 'お気に入り',['id' => Auth::id()], ['class' => 'nav-link']) !!}</li>
             </ul>
             <div class = 'scroll'>
                 {{-- お気に入り一覧 --}}

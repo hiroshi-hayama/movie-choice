@@ -58,7 +58,7 @@ class User extends Authenticatable
         return $this->history()->where('movie_id', $movieId)->exists();
     }
     
-    public function in_favorite($movieId)
+    public function in_favorites($movieId)
     {
         // フォロー中ユーザの中に $userIdのものが存在するか
         return $this->favorites()->where('movie_id', $movieId)->exists();
@@ -72,11 +72,26 @@ class User extends Authenticatable
 
         if ($exist) {
             // すでにフォローしていればフォローを外す
-            $this->history()->detach($movieId);
+            $this->favorites()->detach($movieId);
             return true;
         } else {
             // 未フォローであれば何もしない
             return false;
+        }
+    }
+    
+    public function favorite($movieId)
+    {
+        // すでにお気に入りにしているかの確認
+        $exist = $this->in_favorites($movieId);
+
+        if ($exist) {
+            // すでにフォローしていれば何もしない
+            return false;
+        } else {
+            // 未フォローであればフォローする
+            $this->favorites()->attach($movieId);
+            return true;
         }
     }
     
@@ -95,4 +110,5 @@ class User extends Authenticatable
             return false;
         }
     }
+    
 }
