@@ -10,7 +10,7 @@
                     <div class='delete'>
                         {{-- unfavoriteボタンのフォーム --}}
                         {!! Form::open(['route' => ['users.detach_favorite', $movie_id[$key]->id], 'method' => 'delete']) !!}
-                            {!! Form::submit('Unfavorite', ['class' => "btn-success btn-sm"]) !!}
+                            {!! Form::submit('お気に入り削除', ['class' => "btn-success btn-sm"]) !!}
                         {!! Form::close() !!}
                     </div>
                     </div>

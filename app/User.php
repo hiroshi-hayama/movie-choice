@@ -72,7 +72,7 @@ class User extends Authenticatable
 
         if ($exist) {
             // すでにフォローしていればフォローを外す
-            $this->favorites()->detach($movieId);
+            $this->history()->detach($movieId);
             return true;
         } else {
             // 未フォローであれば何もしない
@@ -98,12 +98,12 @@ class User extends Authenticatable
     public function detach_favorite($movieId)
     {
         // お気に入りにに存在するかの確認
-        $exist = $this->in_favorite($movieId);
+        $exist = $this->in_favorites($movieId);
         
 
         if ($exist) {
             // すでにお気に入りにしていればフォローを外す
-            $this->favorite()->detach($movieId);
+            $this->favorites()->detach($movieId);
             return true;
         } else {
             // 未フォローであれば何もしない

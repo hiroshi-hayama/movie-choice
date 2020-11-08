@@ -97,7 +97,7 @@ class UsersController extends Controller
     public function destroy_favorite($movie_id)
     {
         // 認証済みユーザ（閲覧者）が、 idのユーザをアンフォローする
-        \Auth::user()->detach_history($movie_id);
+        \Auth::user()->detach_favorite($movie_id);
         // 前のURLへリダイレクトさせる
         return back();
     }

@@ -1,6 +1,6 @@
 function fadein() {
 
-  var target = $('#fade_in');
+  let target = $(`#fade_in`);
 
   target.css({opacity : '0'});
   target.show();

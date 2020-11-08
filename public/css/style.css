@@ -3,24 +3,29 @@
 .background_welcome{ 
     background-image: url("/images/the_avengers-wallpaper-1024x768.jpg"); 
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 } 
 
 .background_welcome::before{
   /* 透過した黒を上から重ねるイメージ */
   background-color: rgba(0,0,0,0.4);
   /* 自由に位置指定 */
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
   content: ' ';
+  background-size: cover;
 }
 
 .background_register{ 
     background-image: url("/images/no_time_to_die_movie_2020-wallpaper-1152x720.jpg"); 
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 } 
 
 .background_register::before{
@@ -35,11 +40,15 @@
   z-index: -1;
   content: ' ';
   background-size: cover;
+  background-attachment: fixed;
+  
 }
 
 .background_choice{ 
     background-image: url("/images/man_of_steel_2013-wallpaper-1152x720.jpg"); 
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 } 
 
 .background_choice::before{
@@ -53,6 +62,7 @@
   left: 0;
   z-index: -1;
   content: ' ';
+  background-attachment: fixed;
 }
 
 #text{
@@ -86,8 +96,8 @@
 }
 
 .result_button{
-      margin-top: 100px;
-   margin-left: 400px;
+    margin-top: 100px;
+    margin-left: 400px;
 }
 
 
@@ -117,18 +127,19 @@
 
 .scroll{
     overflow:auto;
-		width:730px; height:700px;
-		padding:5px;
-		border:2px dotted #ffffff;
-		color:black;
-		background-color:white;
-		line-height:1.5em;
-		font-weight: bold; 
-		font-size:200%;
+	width:730px; height:700px;
+	padding:5px;
+	border:2px dotted #ffffff;
+	color:black;
+	background-color:white;
+	line-height:1.5em;
+    font-weight: bold; 
+	font-size:200%;
 }
 
-.delete{
-   margin-left: 50px;
-   margin-top: 50px;
+.user_buttons{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
