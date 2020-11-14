@@ -1,10 +1,17 @@
 @charset "utf-8";
 
+html, body {
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
 .background_welcome{ 
     background-image: url("/images/the_avengers-wallpaper-1024x768.jpg"); 
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+    height: 100%;
 } 
 
 .background_welcome::before{
@@ -16,9 +23,14 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
   content: ' ';
   background-size: cover;
+}
+
+.contents{
+  position: absolute;
+  width: 100%;
+  text-align: center;
 }
 
 .background_register{ 
@@ -99,8 +111,6 @@
     margin-top: 100px;
     margin-left: 400px;
 }
-
-
 
 #text_register{
    color: white;
