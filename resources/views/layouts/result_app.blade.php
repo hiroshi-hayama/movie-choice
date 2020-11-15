@@ -12,6 +12,8 @@
         body{ 
             background-image: url("<?php print htmlspecialchars('https://image.tmdb.org/t/p/w1280/' . $responce->backdrop_path , ENT_QUOTES, "UTF-8"); ?>"); 
             background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
             }
         body::before{
             /* 透過した黒を上から重ねるイメージ */

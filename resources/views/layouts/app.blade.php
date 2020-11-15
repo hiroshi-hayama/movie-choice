@@ -12,7 +12,6 @@
     <body>
         <div class='background_welcome'>
             <div class='contents'>
-
             {{-- ナビゲーションバー --}}
             @include('commons.navbar')
     

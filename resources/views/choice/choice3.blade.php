@@ -33,5 +33,8 @@
             </p>
             
         </div>
+        <div class="progress" style="margin-top: 60px; height: 30px;">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:100%">3/3</div>
+        </div>
     </div>
 @endsection

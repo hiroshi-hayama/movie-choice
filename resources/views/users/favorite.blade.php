@@ -3,14 +3,18 @@
 @section('content')
     <div class="row">
         <aside class="col-sm-4">
-                    <h3 class="card-title">ようこそ{{ $user->name }}さん</h3>
+            <p class="user_welcome">ようこそ{{ $user->name }}さん</p>
         </aside>
         <div class="col-sm-8">
-            <ul class="nav nav-tabs nav-justified mb-3">
+            <ul class="nav nav-tabs nav-justified">
                 {{-- 履歴タブ --}}
-                <li class="nav-item">{!! link_to_route('users.index', '履歴',['id' => Auth::id()], ['class' => 'nav-link']) !!}</li>
+                <li class='nav-item'><a href="{{ route('users.index', ['id' => Auth::id()]) }}" class="nav-link {{ Request::routeIs('users.index') ? 'active' : '' }}">
+                履歴
+                </a></li>
                 {{-- お気に入り一覧タブ --}}
-                <li class="nav-item">{!! link_to_route('users.favorites', 'お気に入り',['id' => Auth::id()], ['class' => 'nav-link']) !!}</li>
+                <li class='nav-item'><a href="{{ route('users.favorites', ['id' => Auth::id()]) }}" class="nav-link {{ Request::routeIs('users.favorites') ? 'active' : '' }}">
+                お気に入り
+                </a></li>
             </ul>
             <div class = 'scroll'>
                 {{-- お気に入り一覧 --}}

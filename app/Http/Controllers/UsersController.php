@@ -17,7 +17,7 @@ class UsersController extends Controller
         $user->loadRelationshipCounts();
 
         // ユーザの履歴一覧を取得
-        $movies = $user->history()->paginate(10);
+        $movies = $user->history()->orderBy('movies_history.id')->paginate(10);
         
         $movie_list=[];
         

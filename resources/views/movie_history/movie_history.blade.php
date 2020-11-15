@@ -30,4 +30,8 @@
             </li>
         @endforeach
     </ul>
+@else
+    <div class='text-center' >
+        <p>履歴はありません</p>
+    </div>
 @endif

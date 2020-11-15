@@ -1,7 +1,9 @@
 <header class="mb-4">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         {{-- トップページへのリンク --}}
-        <i class="fas fa-film"></i><a class="navbar-brand" href="/" id='navbar'>MovieChoice</a>
+        <div class='title'>
+            <i class="fas fa-film fa-lg mr-3 icon" style='color:red'></i><a class="navbar-brand" href="/" id='navbar'>MovieChoice</a>
+        </div>
 
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
             <span class="navbar-toggler-icon"></span>
