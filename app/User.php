@@ -39,12 +39,12 @@ class User extends Authenticatable
     
     public function history()
     {
-        return $this->belongsToMany(Movie::class, 'movies_history', 'user_id', 'movie_id')->withTimestamps();;
+        return $this->belongsToMany(Movie::class, 'movies_history', 'user_id', 'movie_id')->withTimestamps();
     }
     
     public function favorites()
     {
-        return $this->belongsToMany(Movie::class, 'favorites', 'user_id', 'movie_id')->withTimestamps();;
+        return $this->belongsToMany(Movie::class, 'favorites', 'user_id', 'movie_id')->withTimestamps();
     }
     
     public function loadRelationshipCounts()
@@ -80,6 +80,21 @@ class User extends Authenticatable
         }
     }
     
+    public function detach_all_history()
+    {
+        // 履歴に存在するかの確認
+        $exist = $this->storing_history($movieId);
+    
+        if ($exist) {
+            // すでにフォローしていればフォローを外す
+            $this->history()->detach();
+            return true;
+        } else {
+            // 未フォローであれば何もしない
+            return false;
+        }
+    }
+    
     public function favorite($movieId)
     {
         // すでにお気に入りにしているかの確認
@@ -101,6 +116,20 @@ class User extends Authenticatable
         $exist = $this->in_favorites($movieId);
         
 
+        if ($exist) {
+            // すでにお気に入りにしていればフォローを外す
+            $this->favorites()->detach($movieId);
+            return true;
+        } else {
+            // 未フォローであれば何もしない
+            return false;
+        }
+    }
+    public function detach_all_favorite($movieId)
+    {
+        // お気に入りにに存在するかの確認
+        $exist = $this->in_favorites($movieId);
+        
         if ($exist) {
             // すでにお気に入りにしていればフォローを外す
             $this->favorites()->detach($movieId);

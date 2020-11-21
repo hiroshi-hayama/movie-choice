@@ -24,7 +24,7 @@
             </div>
             <p class='result_button'>
             {!! link_to_route('choice.show_result', '同じ条件で再検索', ['ew_id' => $ew ,'la_id' => $la ,'genre_id' => $genre], ['class' => 'btn btn-lg btn-primary' , 'style' => 'width:200px']) !!}
-            {!! link_to_route('choice.to_top', 'トップに戻る', [], ['class' => 'btn btn-lg btn-primary' , 'style' => 'width:200px']) !!}
+            {!! link_to_route('choice.index', 'トップに戻る', [], ['class' => 'btn btn-lg btn-primary' , 'style' => 'width:200px']) !!}
             </p>
         </div>
     </div>

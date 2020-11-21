@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-html, body {
+html, body{
   height: 100%;
   margin:0;
   padding:0;
@@ -10,38 +10,26 @@ html, body {
   align-items: center
 }
 
-.background_welcome{ 
-    background-image: url("/images/the_avengers-wallpaper-1024x768.jpg"); 
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    height: 100%;
-} 
-
-.background_welcome::before{
-  /* 透過した黒を上から重ねるイメージ */
-  background-color: rgba(0,0,0,0.4);
-  /* 自由に位置指定 */
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: ' ';
-  background-size: cover;
+.all{
+    min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+    position: relative;/* ←相対位置 */
+    padding-bottom: 60px; /* ←フッターの高さを指定 */
 }
 
-.contents{
-  position: absolute;
-  width: 100%;
-  text-align: center;
+footer{
+    position: absolute;/* ←絶対位置 */
+    bottom: 0;
+    width:100%;
+    background: black;
+    color: white;
+    text-align: center;
 }
 
 .background_register{ 
-    background-image: url("/images/no_time_to_die_movie_2020-wallpaper-1152x720.jpg"); 
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+  background-image: url("/images/no_time_to_die_movie_2020-wallpaper-1152x720.jpg"); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 } 
 
 .background_register::before{
@@ -60,26 +48,6 @@ html, body {
   
 }
 
-.background_choice{ 
-  background-image: url("/images/man_of_steel_2013-wallpaper-1152x720.jpg"); 
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-} 
-
-.background_choice::before{
-  /* 透過した黒を上から重ねるイメージ */
-  background-color: rgba(0,0,0,0.4);
-  /* 自由に位置指定 */
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  content: ' ';
-  background-attachment: fixed;
-}
 
 #text{
    color: white;
@@ -140,7 +108,7 @@ html, body {
 
 .scroll{
   overflow:auto;
-	width:730px; height:700px;
+	width:730px; height:650px;
 	padding:5px;
 	border:2px dotted #ffffff;
 	color:black;
@@ -156,10 +124,15 @@ html, body {
   display: flex;
   justify-content: space-evenly;
 }
-
+/*
 .user_background{
   background-color: black;
+  background-size: cover;
+  height: 100%;
+  position: fixed;
+  width: 100%
 }
+*/
 
 .user_welcome{
   font-weight: bold;

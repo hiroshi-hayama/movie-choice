@@ -11,9 +11,39 @@ class ChoiceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
-        return view('choice.choice');
+        $client = new \GuzzleHttp\Client();
+    
+        $url = "https://api.themoviedb.org/3/movie/";
+        $body = 'api_key=8aefb5e2de7dfff09a9892700b493da5&language=ja';
+        $search_url = $url . '299536' . '?' . $body;
+    
+        $request = $client->get($search_url);
+    
+        $response_json = $request->getBody()->getContents();
+            
+        $response = json_decode($response_json);
+        
+        return view('welcome', ['responce' => $response]);
+    }
+    
+        public function choice()
+    {
+        $client = new \GuzzleHttp\Client();
+    
+        $url = "https://api.themoviedb.org/3/movie/";
+        $body = 'api_key=8aefb5e2de7dfff09a9892700b493da5&language=ja';
+        $search_url = $url . '657' . '?' . $body;
+    
+        $request = $client->get($search_url);
+    
+        $response_json = $request->getBody()->getContents();
+            
+        $response = json_decode($response_json);
+        
+        return view('choice.choice', ['responce' => $response]);
     }
 
     /**
@@ -48,21 +78,35 @@ class ChoiceController extends Controller
         $ew = $ew_id;
         $client = new \GuzzleHttp\Client();
 
-        $request = $client->get('https://api.themoviedb.org/3/movie/767?api_key=8aefb5e2de7dfff09a9892700b493da5&language=ja');
-
+        $url = "https://api.themoviedb.org/3/movie/";
+        $body = 'api_key=8aefb5e2de7dfff09a9892700b493da5&language=ja';
+        $search_url = $url . '657' . '?' . $body;
+    
+        $request = $client->get($search_url);
+    
         $response_json = $request->getBody()->getContents();
+            
         $response = json_decode($response_json);
-        //$response->getBody()->getContents();
-
-        //dd($response->poster_path);
-        return view('choice.choice2',['ew' => $ew]);
+        return view('choice.choice2',['ew' => $ew , 'responce' => $response]);
     }
     
         public function show_genre($ew_id , $la_id)
     {
         $ew = $ew_id;
         $la = $la_id;
-        return view('choice.choice3' , ['ew' => $ew ,'la' => $la]);
+        $client = new \GuzzleHttp\Client();
+
+        $url = "https://api.themoviedb.org/3/movie/";
+        $body = 'api_key=8aefb5e2de7dfff09a9892700b493da5&language=ja';
+        $search_url = $url . '657' . '?' . $body;
+    
+        $request = $client->get($search_url);
+    
+        $response_json = $request->getBody()->getContents();
+            
+        $response = json_decode($response_json);
+
+        return view('choice.choice3' , ['ew' => $ew ,'la' => $la , 'responce' => $response]);
     }
     
         public function store_history($object_movie)
@@ -71,7 +115,7 @@ class ChoiceController extends Controller
         $movie_id = $object_movie->id;
         $exist = $user->storing_history($movie_id);
         if(!$exist){
-        $user->history()->attach($movie_id);
+            $user->history()->attach($movie_id);
         }
     }
     

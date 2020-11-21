@@ -30,6 +30,8 @@
             </li>
         @endforeach
     </ul>
+    {{-- ページネーションのリンク --}}
+    {{ $movie_id->links() }}
 @else
     <div class='text-center' >
         <p>履歴はありません</p>
