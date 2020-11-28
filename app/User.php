@@ -71,29 +71,15 @@ class User extends Authenticatable
         
 
         if ($exist) {
-            // すでにフォローしていればフォローを外す
+            // すでに履歴に存在していれば履歴に入れる
             $this->history()->detach($movieId);
             return true;
         } else {
-            // 未フォローであれば何もしない
+            // 履歴になければ何もしない
             return false;
         }
     }
     
-    public function detach_all_history()
-    {
-        // 履歴に存在するかの確認
-        $exist = $this->storing_history($movieId);
-    
-        if ($exist) {
-            // すでにフォローしていればフォローを外す
-            $this->history()->detach();
-            return true;
-        } else {
-            // 未フォローであれば何もしない
-            return false;
-        }
-    }
     
     public function favorite($movieId)
     {
@@ -101,10 +87,10 @@ class User extends Authenticatable
         $exist = $this->in_favorites($movieId);
 
         if ($exist) {
-            // すでにフォローしていれば何もしない
+            // すでにお気に入りにしていれば何もしない
             return false;
         } else {
-            // 未フォローであればフォローする
+            // お気に入りでなければお気に入りにする
             $this->favorites()->attach($movieId);
             return true;
         }
@@ -112,32 +98,18 @@ class User extends Authenticatable
     
     public function detach_favorite($movieId)
     {
-        // お気に入りにに存在するかの確認
+        // お気に入りに存在するかの確認
         $exist = $this->in_favorites($movieId);
         
 
         if ($exist) {
-            // すでにお気に入りにしていればフォローを外す
+            // すでにお気に入りにしていれば削除する
             $this->favorites()->detach($movieId);
             return true;
         } else {
-            // 未フォローであれば何もしない
+            // お気に入りでなければ何もしない
             return false;
         }
     }
-    public function detach_all_favorite($movieId)
-    {
-        // お気に入りにに存在するかの確認
-        $exist = $this->in_favorites($movieId);
-        
-        if ($exist) {
-            // すでにお気に入りにしていればフォローを外す
-            $this->favorites()->detach($movieId);
-            return true;
-        } else {
-            // 未フォローであれば何もしない
-            return false;
-        }
-    }
-    
+
 }

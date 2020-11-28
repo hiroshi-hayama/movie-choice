@@ -19,3 +19,146 @@ INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(17,"�
 INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(18,"グランド・イリュージョン",75656,1,1,2);
 INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(19,"デス・プルーフ in グラインドハウス",1991,1,1,2);
 INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(20,"コンスタンティン",561,1,1,2);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(21,"ボヘミアンラプソディ",424694,1,1,3);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(22,"オデッセイ",286217,1,1,3);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(23,"ダンケルク",374720,1,1,3);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(24,"インターステラー",157336,1,1,3);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(25,"マイ・インターン",257211,1,1,3);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(26,"セッション",244786,1,1,3);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(27,"グリーンブック",490132,1,1,3);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(28,"ハドソン川の奇跡",363676,1,1,3);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(29,"最強の二人",77338,1,1,3);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(30,"ブラックスワン",44214,1,1,3);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(31,"アラジン",420817,1,1,4);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(32,"シェイプ・オブ・ウォーター",399055,1,1,4);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(33,"名探偵ピカチュウ",447404,1,1,4);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(34,"ベンジャミン・バトン 数奇な人生",4922,1,1,4);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(35,"シザーハンズ",162,1,1,4);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(36,"パンズ・ラビリンス",1417,1,1,4);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(37,"ビッグ・フィッシュ",587,1,1,4);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(38,"ハリー・ポッターと賢者の石",671,1,1,4);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(39,"ロード・オブ・ザ・リング",120,1,1,4);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(40,"ゴースト／ニューヨークの幻",251,1,1,4);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(41,"スパイダーマン：ホームカミング",420817,1,1,5);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(42,"きっと、うまくいく",20453,1,1,5);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(43,"グッド・ウィル・ハンティング／旅立ち",489,1,1,5);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(44,"スタンド・バイ・ミー",235,1,1,5);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(45,"ソーシャル・ネットワーク",37799,1,1,5);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(46,"トレインスポッティング",627,1,1,5);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(47,"6才のボクが、大人になるまで。",85350,1,1,5);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(48,"君の名前で僕を呼んで",398818,1,1,5);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(49,"スパイダーマン2",558,1,1,5);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(50,"遠い空の向こうに",13466,1,1,5);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(51,"僕のワンダフル・ライフ",381289,1,1,6);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(52,"プーと大人になった僕",420814,1,1,6);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(53,"パディントン",116149,1,1,6);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(54,"パディントン2 ",235346648,1,1,6);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(55,"ジュマンジ",8844,1,1,6);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(56,"トレインスポッティング",627,1,1,6);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(57,"6才のボクが、大人になるまで。",85350,1,1,6);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(58,"君の名前で僕を呼んで",398818,1,1,6);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(59,"スパイダーマン2",558,1,1,6);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(60,"遠い空の向こうに",13466,1,1,6);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(61,"マッドマックス　怒りのデス・ロード",76341,1,1,7);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(62,"ミッション：インポッシブル／ローグ・ネイション",177677,1,1,7);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(63,"ミッション：インポッシブル／フォールアウト",353081,1,1,7);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(64,"レオン ",101,1,1,7);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(65,"デッドプール",293660,1,1,7);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(66,"キングスマン：ゴールデン・サークル",343668,1,1,7);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(67,"アベンジャーズ／エイジ・オブ・ウルトロン",99861,1,1,7);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(68,"アベンジャーズ",24428,1,1,7);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(69,"アントマン",102899,1,1,7);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(70,"パシフィック・リム",68726,1,1,7);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(71,"ヘイトフル・エイト",273248,1,1,8);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(72,"ジャンゴ　繋がれざる者",68718,1,1,8);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(73,"許されざる者",33,1,1,8);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(74,"トゥルー・グリット",44264,1,1,8);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(75,"明日に向って撃て！",642,1,1,8);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(76,"荒野の七人",966,1,1,8);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(77,"アウトロー",10747,1,1,8);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(78,"ウエスタン",335,1,1,8);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(79,"荒野の誓い",384680,1,1,8);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(80,"シルバラード",11509,1,1,8);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(81,"サイコ",539,1,1,9);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(82,"シャイニング",694,1,1,9);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(83,"エイリアン",348,1,1,9);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(84,"エクソシスト",9552,1,1,9);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(85,"ジョーズ",578,1,1,9);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(86,"ゲット・アウト",419430,1,1,9);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(87,"イレイザーヘッド",985,1,1,9);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(88,"ジェイコブス・ラダー",2291,1,1,9);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(89,"ソウ",176,1,1,9);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(90,"オーメン",794,1,1,9);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(91,"スパイダーマン：スパイダーバース",324857,1,1,10);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(92,"グラディエーター",98,1,1,10);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(93,"はじまりへの旅",334533,1,1,10);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(94,"インディ・ジョーンズ／最後の聖戦",89,1,1,10);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(95,"ベン・ハー",665,1,1,10);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(96,"グーニーズ",9340,1,1,10);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(97,"HERO",79,1,1,10);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(98,"フィフス・エレメント",18,1,1,10);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(99,"ハンガー・ゲーム2",101299,1,1,10);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(100,"ランボー",1368,1,1,10);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(101,"シンドラーのリスト",424,1,1,11);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(102,"戦場のピアニスト",423,1,1,11);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(103,"地獄の黙示録",28,1,1,11);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(104,"イングロリアス・バスターズ",16869,1,1,11);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(105,"ジョジョ・ラビット",515001,1,1,11);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(106,"プライベート・ライアン",857,1,1,11);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(107,"フルメタル・ジャケット",600,1,1,11);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(108,"イミテーション・ゲーム ／エニグマと天才数学者の秘密",205596,1,1,11);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(109,"ヒトラー ～最期の12日間～",613,1,1,11);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(110,"戦場にかける橋",826,1,1,11);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(111,"フォレスト・ガンプ／一期一会",13,1,1,12);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(112,"ニュー・シネマ・パラダイス",11216,1,1,12);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(113,"風と共に去りぬ",770,1,1,12);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(114,"ローマの休日",804,1,1,12);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(115,"アメリ",194,1,1,12);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(116,"her／世界でひとつの彼女",152601,1,1,12);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(117,"タイタニック",597,1,1,12);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(118,"鑑定士と顔のない依頼人",152742,1,1,12);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(119,"ビューティフル・マインド",453,1,1,12);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(120,"スラムドッグ＄ミリオネア",12405,1,1,12);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(121,"ライアー ライアー",1624,1,1,13);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(122,"マスク",854,1,1,13);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(123,"フィリップ、きみを愛してる！",8952,1,1,13);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(124,"キング・オブ・コメディ",262,1,1,13);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(125,"ビーン",1281,1,1,13);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(126,"スティング",9277,1,1,13);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(127,"デッドプール",293660,1,1,13);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(128,"ハングオーバー！消えた花ムコと史上最悪の二日酔い",18785,1,1,13);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(129,"アダムス・ファミリー",2907,1,1,13);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(130,"ブルース・ブラザース",525,1,1,13);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(131,"シチズンフォー スノーデンの暴露",293310,1,1,14);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(132,"イカロス",432976,1,1,14);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(133,"華氏911",1777,1,1,14);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(134,"皇帝ペンギン",1667,1,1,14);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(135,"マイケル・ジャクソン This Is It",13576,1,1,14);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(136,"フリーソロ",515042,1,1,14);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(137,"ボウリング・フォー・コロンバイン",1430,1,1,14);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(138,"イグジット・スルー・ザ・ギフトショップ",39452,1,1,14);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(139,"シッコ",2359,1,1,14);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(140,"スーパーサイズミー",9372,1,1,14);
+
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(141,"グレイテスト・ショーマン",316029,1,1,15);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(142,"ラ・ラ・ランド",313369,1,1,15);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(143,"ヘアスプレー",2976,1,1,15);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(144,"マンマ・ミーア! ヒア・ウィー・ゴー",458423,1,1,15);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(145,"美女と野獣",321612,1,1,15);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(146,"オペラ座の怪人",9833,1,1,15);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(147,"メリー・ポピンズ",433,1,1,15);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(148,"マイ・フェア・レディ",11113,1,1,15);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(149,"グリース",621,1,1,15);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(150,"ファントム・オブ・パラダイス",27327,1,1,15);

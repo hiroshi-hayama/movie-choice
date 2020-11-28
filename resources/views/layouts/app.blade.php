@@ -15,8 +15,8 @@
             background-size: cover;
             background-attachment: fixed;
             background-position: center center;
-            height: 100%;
             position: fixed;
+            height: 100%;
             width: 100%
         } 
         .background_welcome::before{

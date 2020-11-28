@@ -17,7 +17,9 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/', 'ChoiceController@index')->name('choice.index');;
+Route::get('/', 'ChoiceController@index')->name('choice.index');
+
+Route::get('about_moviechoice', 'ChoiceController@about_moviechoice')->name('about_moviechoice');
 
 
 // ユーザ登録

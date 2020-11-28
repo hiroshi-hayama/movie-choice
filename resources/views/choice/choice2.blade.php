@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="text-center">
-        <div id='text'>
+        <div class='text'>
             <h1>どちらにしますか？</h1>
         </div>
         <div class='buttons_choice'>

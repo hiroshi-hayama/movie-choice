@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="text-center">
-        <div id='text'>
+        <div class='text'>
             <h1 id='fade_in'>どちらにしますか？</h1>
         </div>
         <div class='buttons_choice'>

@@ -29,7 +29,24 @@ class ChoiceController extends Controller
         return view('welcome', ['responce' => $response]);
     }
     
-        public function choice()
+    public function about_moviechoice()
+    {
+        $client = new \GuzzleHttp\Client();
+    
+        $url = "https://api.themoviedb.org/3/movie/";
+        $body = 'api_key=8aefb5e2de7dfff09a9892700b493da5&language=ja';
+        $search_url = $url . '299536' . '?' . $body;
+    
+        $request = $client->get($search_url);
+    
+        $response_json = $request->getBody()->getContents();
+            
+        $response = json_decode($response_json);
+        
+        return view('about_moviechoice', ['responce' => $response]);
+    }
+    
+    public function choice()
     {
         $client = new \GuzzleHttp\Client();
     
