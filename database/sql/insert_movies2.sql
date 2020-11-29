@@ -29,7 +29,7 @@ INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(174,'
 INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(175,'スワロウテイル',8426,2,1,5);
 
 INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(176,'ALWAYS　三丁目の夕日',13430,2,1,6);
-INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(177,'ALWAYS 三丁目の夕日 '64',121239,2,1,6);
+INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(177,'ALWAYS 三丁目の夕日 64',121239,2,1,6);
 INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(178,'ALWAYS 続・三丁目の夕日',41177,2,1,6);
 INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(179,'旅猫リポート',512340,2,1,6);
 INSERT INTO movies (id,title,tmdb_id,west_east,live_animated,genre) VALUES(180,'ひまわりと子犬の7日間',223391,2,1,6);
